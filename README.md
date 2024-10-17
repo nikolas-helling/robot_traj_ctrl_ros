@@ -2,54 +2,74 @@
 
 ## Overview
 
-This project implements a trajectory tracking controller for a car-like (Akermann steering) mobile robot
+This project implements a trajectory tracking controller for a car-like (Ackermann steering) mobile robot
 using standard ROS libraries, PID controllers and different tyre models.
 
 ## Prerequisites
 
 - Docker installed on your machine.
-- Git installed on your machine (for cloning the repository).
+- Git installed on your machine.
 
 ## Repository Structure
 
+```
 .
 ├── .gitignore
 ├── .dockerignore
 ├── Dockerfile
 ├── README.md
+├── py_requirements.txt
 ├── start_docker
-└── entrypoint.sh
-└── start_task1.sh
-└── start_task2.sh
-└── run_docker.sh
+│   ├── entrypoint.sh
+│   ├── start_task1.sh
+│   ├── start_task2.sh
+│   └── run_docker.sh
 └── src
-└── (...actual ROS nodes)
+    └── (...actual ROS nodes)
+```
 
-## Building the Docker Image
+## Clone the GitHub Repository
 
-To build the Docker image, navigate to the root of the project directory and run:
+Clone the project repository:
 
-````bash
-docker build -t your_docker_image_name .
+```
+git clone https://github.com/lellosburello/CMR_project_docker.git
+```
 
-## Move to the right directory
+Go to the project repository folder:
 
-Cd to the right directory before running the bash scripts for executing the tasks:
+```
+cd CMR_project_docker
+```
 
-```bash
+## Building the Docker image
+
+To build the Docker image, navigate to the root of the project directory (`/CMR_project_docker`), where the Dockerfile is located, and run:
+
+```
+sudo docker build -t docker_project_traj_track .
+```
+
+## Running the project tasks
+
+Now, go first to the `/start_docker` folder before running the bash scripts for executing the tasks:
+
+```
 cd start_docker
+```
 
-## Running task1
+### Running task1 (bicycle kinematic model)
 
-To run the first task (task1) run:
+To run the first task (task1), the trajectory tracking simulation with the bicycle kinematic model, run:
 
-```bash
+```
 ./run_docker.sh task1
+```
 
-## Running task2
+### Running task2 (dynamic model - linear tyre model)
 
-To run the first task (task2) run:
+To run the second task (task2), the trajectory tracking simulation using the dynamic model with linear tyre model, run:
 
-```bash
+```
 ./run_docker.sh task2
-````
+```
