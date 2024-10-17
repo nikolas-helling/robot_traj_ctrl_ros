@@ -1,0 +1,15 @@
+# Controller configuration parameters
+  /car_traj_ctrl/run_period: 0.001          # Node execution period
+  /car_traj_ctrl/Ts: 0.001                  # Discrete controller (PI) integration step
+
+# Controller parameters
+  /car_traj_ctrl/P_dist: 0.12               # Distance of point P from odometric center (along the axle of the robot)
+  /car_traj_ctrl/l: 0.26                    # Bicycle length (wheelbase)
+  /car_traj_ctrl/Kpx: 20.0                  # PI trajectory tracking controller proportional gain for x direction
+  /car_traj_ctrl/Kpy: 20.0                  # PI trajectory tracking controller proportional gain for y direction
+  /car_traj_ctrl/Tix: 0.5                   # PI trajectory tracking controller integral time for x direction
+  /car_traj_ctrl/Tiy: 0.5                   # PI trajectory tracking controller integral time for y direction
+  /car_traj_ctrl/a: 2.0                     # eight-shaped trajectory shape parameter
+  /car_traj_ctrl/T: 3.0                     # eight-shaped trajectory time period (from parameter table)
+  /car_traj_ctrl/pi: 3.141592               # pi
+

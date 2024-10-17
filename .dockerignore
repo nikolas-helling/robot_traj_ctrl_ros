@@ -1,0 +1,19 @@
+# Ignore the Git directory
+.git
+.gitignore
+
+# Ignore ROS build files and logs
+build/
+devel/
+install/
+log/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore local config and editor files
+.vscode/
+.idea/
+*.swp
+.DS_Store

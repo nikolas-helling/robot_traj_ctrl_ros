@@ -1,0 +1,29 @@
+# ROS-specific files to ignore
+build/
+devel/
+install/
+log/
+*.bag
+.catkin_workspace
+
+# Ignore CMake and build artifacts
+CMakeLists.txt.user
+cmake-build-debug/
+*.o
+*.a
+*.so
+*.out
+*.log
+
+# Ignore python byte code
+__pycache__/
+*.py[cod]
+
+# Ignore other IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+
+# Ignore Docker-related files if they are not necessary for the project
+docker-compose.override.yml
+*.env
