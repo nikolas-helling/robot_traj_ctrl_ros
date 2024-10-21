@@ -1,10 +1,10 @@
 # Handle line endings for all text files
 * text=auto
 
-# Force specific line endings for certain types of files
-*.sh   eol=lf     # Shell scripts always use LF
-*.bat  eol=crlf   # Batch scripts always use CRLF
-*.md   text       # Markdown files as text (handled automatically)
+# Force specific line endings for certain types of files (shell, batch, markdown)
+*.sh   eol=lf     
+*.bat  eol=crlf  
+*.md   text       
 
 # Prevent Git from messing with binary files
 *.jpg  -text     
