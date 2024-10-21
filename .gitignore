@@ -7,6 +7,7 @@ log/
 .catkin_workspace
 
 # Ignore CMake and build artifacts
+src/CMakeLists.txt
 CMakeLists.txt.user
 cmake-build-debug/
 *.o
