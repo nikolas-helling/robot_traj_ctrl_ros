@@ -1,6 +1,6 @@
-# Trajectory Tracking for Mobile Robot (ROS project for CMR)
+# Trajectory Tracking for Ackermann Steering Mobile Robot in ROS
 
-This project implements a trajectory tracking controller for a car-like (Ackermann steering) mobile robot
+This project implements a trajectory tracking controller for a 4-wheel car-like (Ackermann steering) mobile robot
 using standard ROS libraries and PID controllers. The controllers are designed both on kinematic models and dynamic models using different tyre models.
 
 ## Prerequisites
@@ -47,13 +47,13 @@ using standard ROS libraries and PID controllers. The controllers are designed b
 Clone the project repository:
 
 ```
-git clone https://github.com/lellosburello/CMR_project_docker.git
+git clone https://github.com/nikolas-helling/robot_traj_ctrl_ros.git
 ```
 
 Go to the project repository folder:
 
 ```
-cd CMR_project_docker
+cd robot_traj_ctrl_ros
 ```
 Start the WSL environment (Windows only):
 ```
@@ -62,7 +62,7 @@ wsl
 
 ## Building the Docker image
 
-To build the Docker image, navigate to the root of the project directory (`/CMR_project_docker`), where the Dockerfile is located, and run:
+To build the Docker image, navigate to the root of the project directory (`/robot_traj_ctrl_ros`), where the Dockerfile is located, and run:
 
 ```
 sudo docker build -t docker_project_traj_track .
