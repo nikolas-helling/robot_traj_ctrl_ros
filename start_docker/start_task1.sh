@@ -3,7 +3,7 @@
 #### INIT
 
 # declare workspace path for easier syntax
-WORKSPACE_PATH=/CMR_ws
+WORKSPACE_PATH=/robot_traj_ctrl_ws
 
 # variable for sourcing commands for ROS and workspace setup files
 SOURCE_COMMANDS="source /opt/ros/melodic/setup.bash; source $WORKSPACE_PATH/devel/setup.bash"

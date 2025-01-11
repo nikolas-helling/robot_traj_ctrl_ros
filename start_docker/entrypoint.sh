@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # declare workspace path for easier syntax
-WORKSPACE_PATH=/CMR_ws
+WORKSPACE_PATH=/robot_traj_ctrl_ws
 
 # check the first argument to determine which application to run
 if [ "$1" == "task1" ]; then
