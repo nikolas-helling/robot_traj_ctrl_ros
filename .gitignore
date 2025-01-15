@@ -25,6 +25,6 @@ __pycache__/
 .idea/
 *.swp
 
-# Ignore Docker-related files if they are not necessary for the project
-docker-compose.override.yml
-*.env
+# Ignore Docker-related files if not necessary
+# docker-compose.override.yml
+# *.env

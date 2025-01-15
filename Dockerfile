@@ -55,8 +55,10 @@ COPY py_requirements.txt /robot_traj_ctrl_ws/
 RUN pip install -r /robot_traj_ctrl_ws/py_requirements.txt && \
     rm -rf /root/.cache/pip
 
-# source ROS environment and build catkin workspace
-RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && catkin_make"
+# automate sourcing for new shells and build catkin ws
+RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc && \
+    echo "source /robot_traj_ctrl_ws/devel/setup.bash" >> ~/.bashrc && \
+    /bin/bash -c "source /opt/ros/melodic/setup.bash && catkin_make"
 
 # setup container entrypoint
 ENTRYPOINT ["/robot_traj_ctrl_ws/entrypoint.sh"]

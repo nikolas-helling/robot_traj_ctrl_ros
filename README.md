@@ -1,7 +1,7 @@
 # Trajectory Tracking for Ackermann Steering Mobile Robot in ROS
 
 This project implements a trajectory tracking controller for a 4-wheel car-like (Ackermann steering) mobile robot
-using standard ROS libraries and PID controllers. The controllers are designed both on kinematic models and dynamic models using different tyre models.
+using standard ROS libraries and PID controllers. The controllers are designed both on kinematic models and dynamic models using different tyre models. The codebase is being updated with the the navigation module for sample-based trajectories and obstacle avoidance soon.
 
 ## Prerequisites
 

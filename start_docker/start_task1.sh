@@ -48,6 +48,4 @@ terminator -e " bash -c '$SOURCE_COMMANDS; \
 cd $WORKSPACE_PATH/src/car_traj_ctrl/script; \
 python plot_result_trajctrl_kin.py \"traj_ctrl_results_kin.bag\"; exec bash'"
 
-sleep 10
-
 sleep infinity
